@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
-import StarRating from './StarRating';
-import './App.css';
+import React, { useState } from "react";
+import StarRating from "./StarRating";
+import "./App.css";
 
 export default function App() {
   const [rating1, setRating1] = useState(2);
+  console.log("rating1: " + rating1);
+  console.log("setrating1: " + setRating1);
   const [rating2, setRating2] = useState(5);
 
   return (

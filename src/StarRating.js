@@ -34,7 +34,7 @@ export default function StarRating(props) {
   } = props;
 
   return (
-    <span className={className}>
+    <span data-testid="elementss" className={className}>
       {[...Array(starCount).keys()].map(position => {
         return (
           <Star
@@ -48,6 +48,7 @@ export default function StarRating(props) {
           />
         );
       })}
+      hey
     </span>
   );
 }
